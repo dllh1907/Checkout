@@ -1,4 +1,4 @@
-Run project and call like the api
+Run project and call the api in this order
 
 http://localhost:51988/api/merchant/login?username=SONY&password=S0NY - receive the token
 localhost:51988/api/merchant/requestpayment?token=d031c19d-e59e-41dc-9326-983dac980192&cardnumber=123564789&month=7&year=19&info=Headset&amount=2000&currency=MUR&cvv=128
