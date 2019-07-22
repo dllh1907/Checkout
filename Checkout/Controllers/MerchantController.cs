@@ -17,24 +17,6 @@ namespace Checkout.Controllers
             _paymentGateway = paymentGateway;
         }
 
-        [Route("api/merchant/getallcontacts")]
-        public Merchant[] GetAll()
-        {
-            return new Merchant[]
-            {
-                new Merchant
-                {
-                    Id = 1,
-                    Name = "Apple"
-                },
-                new Merchant
-                {
-                    Id = 2,
-                    Name = "Sony"
-                }
-            };
-        }
-
         [HttpGet]
         [Route("api/merchant/login")]
         public IHttpActionResult AuthenticateMerchant([FromUri]string username, [FromUri] string password)

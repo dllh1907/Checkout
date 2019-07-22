@@ -1,0 +1,13 @@
+Run project and call like the api
+
+http://localhost:51988/api/merchant/login?username=SONY&password=S0NY - receive the token
+localhost:51988/api/merchant/requestpayment?token=d031c19d-e59e-41dc-9326-983dac980192&cardnumber=123564789&month=7&year=19&info=Headset&amount=2000&currency=MUR&cvv=128
+localhost:51988/api/merchant/requestpaymenthistory?token=d031c19d-e59e-41dc-9326-983dac980192&
+
+-Have used IOC container Autofac
+-Demonstrated how log would have been implemented
+- Would have used database and Entity Framework
+- Expand the token service, create a tokenizer which randomly generate a proper token and save in db 
+- Would have done unit test and mock the bank call Rhino Mocks
+
+I am sorry for lateness and there is much more than could be done here but I have been limited in time sadly currently.
